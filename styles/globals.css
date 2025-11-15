@@ -1,0 +1,31 @@
+:root{--bg:#0b0d10;--card:#12161b;--muted:#97a2b0;--text:#e8f0fb;--accent:#6ee7ff;--accent2:#a78bfa;--danger:#ef4444;--ok:#22c55e}
+*{box-sizing:border-box}
+html,body{padding:0;margin:0;height:100%}
+body{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",Arial,"Noto Sans",sans-serif;background:radial-gradient(1200px 800px at 80% -10%,#1b2633 0%,#0b0d10 60%),#0b0d10;color:var(--text)}
+.container{max-width:1100px;margin:0 auto;padding:32px}
+.header{display:flex;flex-direction:column;gap:8px;margin-bottom:24px}
+.header h1{font-size:32px;margin:0}
+.header p{color:var(--muted);margin:0}
+.card{background:linear-gradient(180deg,#151a20 0%,#0f1318 100%);border:1px solid #1f2933;border-radius:14px;padding:16px}
+.grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:16px}
+.section{grid-column:span 12}
+@media(min-width:900px){.section{grid-column:span 12}}
+.dropzone{border:1px dashed #2a3645;border-radius:12px;padding:20px;text-align:center;background:#0d1218}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+.button{background:linear-gradient(180deg,#1f2937,#0f172a);color:#e5f2ff;border:1px solid #263243;padding:10px 14px;border-radius:10px;cursor:pointer;transition:all .2s ease;display:inline-flex;align-items:center;gap:8px}
+.button:hover{transform:translateY(-1px);border-color:#334155}
+.button.primary{background:linear-gradient(180deg,#0ea5e9,#0369a1);border-color:#0284c7;color:#001018}
+.button.success{background:linear-gradient(180deg,#22c55e,#15803d);border-color:#16a34a;color:#03120a}
+.button.danger{background:linear-gradient(180deg,#ef4444,#991b1b);border-color:#dc2626}
+.pill{padding:6px 10px;border-radius:999px;border:1px solid #2a3645;background:#0d1218;color:#bcd3ee}
+.footer{margin-top:24px;color:var(--muted);text-align:center}
+.preview{width:100%;max-height:420px;background:#000;border-radius:10px}
+.row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.progress{height:10px;background:#0e141b;border:1px solid #1f2937;border-radius:999px;overflow:hidden}
+.progress>span{display:block;height:100%;background:linear-gradient(90deg,#6ee7ff,#a78bfa);width:0%}
+.badge{font-size:12px;color:#a1b2c9}
+label.style{display:flex;gap:10px;align-items:center;border:1px solid #2a3645;background:#0d1218;padding:10px;border-radius:10px;cursor:pointer}
+.styles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+@media(min-width:900px){.styles{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.style-name{font-weight:600}
+.small{font-size:12px;color:#9fb0c8}
